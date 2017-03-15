@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/fault_location_tip"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/background"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/gray_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="@string/fault_location" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/faultinfo_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/faultinfo_click_container"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/bt_nobgd" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/text_color_gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ddfaultlocation_2x" />
+
+                <TextView
+                    style="@style/green_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="@string/add_fault_location" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/text_color_gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/responsible_classification_container"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bt_nobgd" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/text_color_gray" />
+
+            <TextView
+                style="@style/black_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:text="@string/responsibility_classification" />
+
+            <FrameLayout
+                android:id="@+id/responsibility_container"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp" >
+
+                <TextView
+                    android:id="@+id/responsible_classification_txt"
+                    style="@style/black_medium"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="13dp"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@mipmap/generalpage_2x" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/text_color_gray" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/background"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/gray_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="@string/fault_description" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:minHeight="80dp"
+            android:orientation="vertical"
+            android:paddingBottom="14dp"
+            android:paddingTop="9dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/fault_descrition_et"
+                    style="@style/black_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:background="@color/text_color_wight"
+                    android:gravity="center_vertical"
+                    android:hint="@string/descrip_fault"
+                    android:inputType="textMultiLine"
+                    android:maxLength="50"
+                    android:minHeight="50dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@color/text_color_gray" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/fault_show_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:horizontalSpacing="2dp"
+                android:listSelector="@color/transparent"
+                android:minHeight="200dp"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dp" >
+            </GridView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/background"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/gray_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="@string/fault_analysis" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:minHeight="80dp"
+            android:orientation="vertical"
+            android:paddingTop="9dp" >
+
+            <EditText
+                android:id="@+id/fault_display_et"
+                style="@style/black_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@color/text_color_wight"
+                android:enabled="true"
+                android:gravity="center_vertical"
+                android:hint="@string/descrip_cause"
+                android:inputType="textMultiLine"
+                android:maxLength="50"
+                android:minHeight="50dp"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

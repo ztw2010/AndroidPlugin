@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.small.test.appstub.widget.pull2refresh.PullToRefreshListView
+        android:id="@+id/type_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/maintenance_registration_bg"
+        android:cacheColorHint="#00000000"
+        android:clipToPadding="true"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:paddingTop="5dp"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/black"
+        ptr:ptrMode="pullFromStart" />
+</LinearLayout>

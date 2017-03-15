@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">选取照片lib插件</string>
+    <string name="all_images">全部图片</string>
+    <string name="folder_image_count">共%1$d张</string>
+    <string name="preview_image_count">%1$d/%2$d</string>
+    <string name="select_limit">最多选择%1$d张图片</string>
+    <string name="complete">完成</string>
+    <string name="select_complete">完成(%1$d/%2$d)</string>
+    <string name="preview_count">预览(%1$d)</string>
+    <string name="photo_crop">图片裁剪</string>
+    <string name="origin">原图</string>
+    <string name="origin_size">原图(%1$s)</string>
+    <string name="finish">完成</string>
+    <string name="select_pic">选取照片</string>
+    <string name="preview">预览</string>
+    <string name="please_chose_pic">请选择图片</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="tips">提示</string>
+    <string name="sure_to_delete">确定删除吗?</string>
+</resources>

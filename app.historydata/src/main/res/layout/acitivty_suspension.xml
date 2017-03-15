@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintenance_registration_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        layout="@layout/common_title"
+        android:background="@color/black" />
+
+    <com.small.test.appstub.widget.multiplestatusview.MultipleStatusView
+        xmlns:ptr="http://schemas.android.com/apk/res/com.small.test.app.historydata"
+        android:id="@+id/zongcheng_multiplestatusview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/maintenance_registration_bg"
+        ptr:contentView="@layout/suspension_content_view" />
+</FrameLayout>

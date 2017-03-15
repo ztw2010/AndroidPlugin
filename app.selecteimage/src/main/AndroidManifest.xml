@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.small.test.lib.selecteimage">
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application>
+        <activity
+            android:name="com.small.test.app.selecteimage.ImagePickerActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.small.test.app.selecteimage.ui.ImageBaseActivity" />
+        <activity
+            android:name="com.small.test.app.selecteimage.ui.ImageGridActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name="com.small.test.app.selecteimage.ui.ImageCropActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="false"/>
+        <activity
+            android:name="com.small.test.app.selecteimage.ui.ImagePreviewActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name="com.small.test.app.selecteimage.ui.ImagePreviewDelActivity"
+            android:configChanges="orientation|screenSize"/>
+    </application>
+
+</manifest>

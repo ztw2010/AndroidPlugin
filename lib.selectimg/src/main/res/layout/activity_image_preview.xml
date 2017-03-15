@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintenance_registration_bg">
+
+    <com.small.test.lib.selectimg.view.ViewPagerFixed
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/titleBarView"
+        layout="@layout/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#cc22292c"
+        android:visibility="gone">
+
+        <com.small.test.lib.selectimg.view.SuperCheckBox
+            android:id="@+id/cb_origin"
+            style="@style/SuperCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="8dp"
+            android:text="原图(3.07M)"
+            android:textColor="#FFF" />
+
+        <com.small.test.lib.selectimg.view.SuperCheckBox
+            android:id="@+id/cb_check"
+            style="@style/SuperCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:drawablePadding="4dp"
+            android:includeFontPadding="true"
+            android:paddingLeft="8dp"
+            android:text="选择"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/btn_del"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_back_press"
+            android:padding="14dp"
+            android:src="@mipmap/ic_del"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

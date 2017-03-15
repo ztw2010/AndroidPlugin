@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 维修登页面记背景色 -->
+    <color name="maintenance_registration_bg">#f3f4f6</color>
+    <color name="black">#000000</color>
+    <color name="transparent">@null</color>
+    <color name="sys_category_bg_color">#AD000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black_line">#33000000</color>
+    <color name="sys_color">#515e72</color>
+    <color name="sys_type_green">#42be54</color>
+    <color name="sys_btn_press">#40495a</color>
+    <color name="silver_diver">#D0CCC7</color>
+    <color name="text_hint_color">#807D78</color>
+</resources>

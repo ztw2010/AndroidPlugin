@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "bundles": [
+    {
+      "uri": "main",
+      "pkg": "com.small.test.app.main"
+    },
+    {
+      "uri": "historydata",
+      "pkg": "com.small.test.app.historydata"
+    },
+    {
+      "uri": "zxing",
+      "pkg": "com.small.test.app.zxing"
+    },
+    {
+      "uri": "bdmap",
+      "pkg": "com.small.test.app.bdmap"
+    },
+    {
+      "uri": "maintenance",
+      "pkg": "com.small.test.app.maintenance"
+    },
+    {
+      "uri": "lib.selectimg",
+      "pkg": "com.small.test.lib.selectimg"
+    },
+    {
+      "uri": "lib.video",
+      "pkg": "com.small.test.lib.video"
+    }
+  ]
+}

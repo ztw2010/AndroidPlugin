@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 加载框相关begin -->
+    <declare-styleable name="SVCircleProgressBar">
+        <attr name="svprogress_roundColor" format="color"/>
+        <attr name="svprogress_roundProgressColor" format="color"/>
+        <attr name="svprogress_roundWidth" format="dimension"></attr>
+        <attr name="svprogress_max" format="integer"></attr>
+        <attr name="svprogress_style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <!-- 加载框相关end -->
+
+    <!--带清除按钮的EditText-->
+    <declare-styleable name="EditTextField">
+        <!-- 清除按钮显示模式 -->
+        <attr name="clearButtonMode">
+            <!--不显示清空按钮-->
+            <enum name="never" value="0" />
+            <!--不为空，获得焦点与没有获得焦点都显示清空按钮-->
+            <enum name="always" value="1" />
+            <!--不为空，且在编辑状态时（及获得焦点）显示清空按钮-->
+            <enum name="whileEditing" value="2" />
+            <!--不为空，且不在编译状态时（焦点不在输入框上）显示清空按钮-->
+            <enum name="unlessEditing" value="3" />
+        </attr>
+        <attr name="clearButtonDrawable" format="reference"/>
+    </declare-styleable>
+
+
+    <!--  下拉刷新begin    -->
+    <declare-styleable name="PullToRefresh">
+
+        <!-- 设置整个刷新列表的背景色 -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- 设置下拉Header或者上拉Footer的背景色 -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- 用于设置Header与Footer中文本的颜色 -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+
+        <!-- 用于设置Header与Footer中上次刷新时间的颜色 -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" /><!-- 禁用下拉刷新 -->
+            <flag name="pullFromStart" value="0x1" /><!-- 仅支持下拉刷新 -->
+            <flag name="pullFromEnd" value="0x2" /><!-- 仅支持上拉刷新 -->
+            <flag name="both" value="0x3" /><!-- 上拉刷新和下拉刷新都支持 -->
+            <flag name="manualOnly" value="0x4" /><!-- 只允许手动触发 -->
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- 如果为true会在mPullRefreshListView中出现icon，右上角和右下角 -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+
+        <!-- 同时改变头部和底部的图标 -->
+        <attr name="ptrDrawable" format="reference" />
+
+        <!-- 头部视图的图标 -->
+        <attr name="ptrDrawableStart" format="reference" />
+
+        <!-- 底部视图的图标  -->
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+
+        <!-- 分别设置拉Header或者上拉Footer中字体的类型颜色等等 -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" /><!-- flip（翻转动画）， rotate（旋转动画）  -->
+        </attr>
+
+        <!-- 刷新的时候，是否允许ListView或GridView滚动推荐使用true -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--决定了Header，Footer以何种方式加入mPullRefreshListView，true为headView方式加入，就是滚动时刷新头部会一起滚动-->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--拉的时候头部或者尾部的刷新图片，是否多次旋转，true多次，false只是旋转一周，再下拉，图片不会在跟着旋转-->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    <!--  下拉刷新end   -->
+
+    <!--加载中视图、错误视图、空数据视图、网络异常视图、内容视图begin    -->
+    <declare-styleable name="MultipleStatusView">
+        <attr name="loadingView" format="reference"/>
+        <attr name="errorView" format="reference"/>
+        <attr name="emptyView" format="reference"/>
+        <attr name="noNetworkView" format="reference"/>
+        <attr name="contentView" format="reference"/>
+    </declare-styleable>
+    <!--加载中视图、错误视图、空数据视图、网络异常视图、内容视图end    -->
+
+
+    <!-- 水平左右滑动导航条相关begin -->
+    <declare-styleable name="PagerSlidingTabStrip">
+
+        <!-- 指示器的颜色 -->
+        <attr name="pstsIndicatorColor" format="color" />
+        <!-- 底部线的颜色 -->
+        <attr name="pstsUnderlineColor" format="color" />
+        <!-- 分割线的颜色 -->
+        <attr name="pstsDividerColor" format="color" />
+        <!-- 指示器的高度 -->
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <!-- 底部线的高度 -->
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <!-- 分割线的上下间距 -->
+        <attr name="pstsDividerPaddingTopBottom" format="dimension" />
+        <!-- 文本的左右间距 -->
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <!-- 每一个TAB的背景 -->
+        <attr name="pstsTabBackground" format="reference" />
+        <!-- 该属性表示里面的TAB是否均分整个PagerSlidingTabStrip控件的宽,true是,false不均分,从左到右排列,默认false -->
+        <attr name="pstsShouldExpand" format="boolean" />
+        <!-- 所有的小写英文文本自动大写 ,默认是true,默认大写 -->
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <!-- TAB选中的颜色 -->
+        <attr name="pstsTextSelectedColor" format="color" />
+        <!-- 缩放的最大值,0.3表示放大后最大是原来的0.3倍,默认未0.3 -->
+        <attr name="pstsScaleZoomMax" format="float" />
+        <!-- 当点击tab时内容区域Viewpager是否是左右滑动,默认是true -->
+        <attr name="pstsSmoothScrollWhenClickTab" format="boolean" />
+    </declare-styleable>
+    <!-- 水平左右滑动导航条相关 end-->
+</resources>

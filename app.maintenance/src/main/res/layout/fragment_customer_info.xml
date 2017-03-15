@@ -1,0 +1,440 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:clear="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintenance_registration_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/id_reject_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/lightgray"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/black_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/reject_desc"
+                android:textColor="@color/red"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/id_reject_tv"
+                style="@style/black_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/text_password"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="@string/driver_info"
+            android:textColor="@color/text_color_gray"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/text_color_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_medium"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:text="@string/driver_name_new" />
+
+            <com.small.test.appstub.widget.clearedittext.ClearEditText
+                android:id="@+id/id_customer_textname"
+                style="@style/black_medium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@color/text_color_wight"
+                android:enabled="true"
+                android:gravity="center_vertical"
+                android:hint="@string/please_enter_driver_name"
+                android:maxLength="8"
+                android:singleLine="true"
+                clear:clearButtonMode="whileEditing" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="25dp"
+            android:background="@color/text_color_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/text_color_wight"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_medium"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:text="@string/telphone" />
+
+            <com.small.test.appstub.widget.clearedittext.ClearEditText
+                android:id="@+id/id_customer_textphone"
+                style="@style/black_medium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@color/text_color_wight"
+                android:enabled="true"
+                android:gravity="center_vertical"
+                android:hint="@string/please_enter_phone_num"
+                android:maxLength="11"
+                android:numeric="integer"
+                android:singleLine="true"
+                clear:clearButtonMode="whileEditing" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/text_color_gray" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="@string/vehicle_info"
+            android:textColor="@color/text_color_gray"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/text_color_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_medium"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:text="@string/car_num" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/simple_name_fl"
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@mipmap/right" />
+
+                    <TextView
+                        android:id="@+id/province_short_name_txt"
+                        style="@style/black_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginRight="30dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/car_province"
+                        android:minWidth="65dp" />
+                </FrameLayout>
+
+                <com.small.test.appstub.widget.clearedittext.ClearEditText
+                    android:id="@+id/id_customer_textlicenum"
+                    style="@style/black_medium"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/text_color_wight"
+                    android:digits="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:enabled="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/car_nums"
+                    android:maxLength="6"
+                    android:minWidth="40dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    clear:clearButtonMode="whileEditing" />
+
+                <FrameLayout
+                    android:id="@+id/get_vim_container"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/select_box_comfire">
+
+                    <TextView
+                        android:layout_width="0.5dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="left|center_vertical"
+                        android:background="@color/view" />
+
+                    <TextView
+                        style="@style/green_query"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="@string/query" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="25dp"
+            android:background="@color/text_color_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/black_medium"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:text="@string/mileage" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <com.small.test.appstub.widget.clearedittext.ClearEditText
+                    android:id="@+id/id_customer_textmileage"
+                    style="@style/black_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/text_color_wight"
+                    android:enabled="true"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_mileage"
+                    android:maxLength="6"
+                    android:minWidth="50dp"
+                    android:numeric="integer"
+                    android:singleLine="true"
+                    clear:clearButtonMode="whileEditing" />
+
+                <TextView
+                    style="@style/black_medium"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/id_customer_textmileage"
+                    android:gravity="center"
+                    android:text="@string/kilometre" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/car_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="25dp"
+                android:background="@color/text_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/text_color_wight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/black_medium"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/vehicle_vincode"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/id_customer_textvin"
+                    style="@style/black_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/text_color_wight"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="25dp"
+                android:background="@color/text_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/black_medium"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/car_category" />
+
+                <TextView
+                    android:id="@+id/id_customer_textclassify"
+                    style="@style/black_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/text_color_wight"
+                    android:enabled="true"
+                    android:gravity="center_vertical"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="25dp"
+                android:background="@color/text_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/black_medium"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/subordinate_company"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/id_customer_textcompany"
+                    style="@style/black_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/text_color_wight"
+                    android:enabled="true"
+                    android:gravity="center_vertical"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="25dp"
+                android:background="@color/text_color_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/text_color_wight"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/black_medium"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/warranty_expires" />
+
+                <TextView
+                    android:id="@+id/id_customer_textguarantee"
+                    style="@style/black_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/text_color_wight"
+                    android:enabled="true"
+                    android:gravity="center_vertical"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/text_color_gray" />
+    </LinearLayout>
+
+</ScrollView>

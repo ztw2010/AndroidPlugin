@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">历史数据插件</string>
+    <string name="install_location">安装位置</string>
+    <string name="sys_first">一级系统</string>
+    <string name="sys_second">二级系统</string>
+    <string name="repaire_main_tips">请根据上面的提示\n单击选择上方条目获取总成信息!</string>
+    <string name="fault_descriptioin">故障描述</string>
+    <string name="close">关闭</string>
+    <string name="cause_of_failure">故障原因</string>
+    <string name="please_chose_loaction_info">请选择安装位置信息!</string>
+    <string name="please_chose_sys_one_info">请选择一级系统信息!</string>
+    <string name="history_data">历史数据</string>
+    <string name="mainten_treatment">处理措施</string>
+    <string name="loading_data">加载中...</string>
+</resources>

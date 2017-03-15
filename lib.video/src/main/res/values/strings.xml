@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">lib.video</string>
+    <string name="land_record">请保持横屏录制</string>
+    <string name="can_not_preview">不能预览</string>
+    <string name="max_duration_reached">时长已达到最大</string>
+    <string name="max_filesize_reached">容量已达到最大</string>
+    <string name="loading_data">加载中...</string>
+    <string name="video_preview">视频预览</string>
+    <string name="mediacontroller_play_pause">播放/暂停</string>
+    <string name="vitamio_init_decoders">Initializing decoders…</string>
+    <string name="permission_group_tools_label">Vitamio tools</string>
+    <string name="permission_group_tools_description">Access Vitamio package and resources.</string>
+    <string name="permission_receive_messages_label">Receive Vitamio messages</string>
+    <string name="permission_receive_messages_description">Receive all broadcasts from Vitamio service.</string>
+    <string name="permission_write_providers_label">Write Vitamio providers</string>
+    <string name="permission_write_providers_description">Delete, update or create new items in Vitamio providers.
+    </string>
+    <string name="VideoView_error_title">Cannot play video</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+        this device.
+    </string>
+    <string name="VideoView_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="VideoView_error_button">OK</string>
+    <string name="sure_to_delete">确定删除吗?</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="init_video_player_error">初始化视频播放器异常,稍后重试</string>
+
+</resources>

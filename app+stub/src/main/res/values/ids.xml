@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  下拉刷新begin    -->
+    <item type="id" name="gridview" />
+    <item type="id" name="webview" />
+    <item type="id" name="scrollview" />
+    <!--  下拉刷新end   -->
+
+    <!--加载中视图、错误视图、空数据视图、网络异常视图、内容视图begin    -->
+    <item name="empty_view" type="id"/>
+    <item name="error_view" type="id"/>
+    <item name="loading_view" type="id"/>
+    <item name="content_view" type="id"/>
+    <item name="no_network_view" type="id"/>
+    <item name="empty_retry_view" type="id"/>
+    <item name="error_retry_view" type="id"/>
+    <item name="no_network_retry_view" type="id"/>
+    <!--加载中视图、错误视图、空数据视图、网络异常视图、内容视图end    -->
+
+</resources>

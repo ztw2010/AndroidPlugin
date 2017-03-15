@@ -1,0 +1,1 @@
+include ':app', ':app.main', ':app.zxing', ':app.bdmap', ':app+stub', ':app.historydata', ':app.maintenance', ':lib.selectimg', ':lib.video'

@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maintenance_registration_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        layout="@layout/common_title"
+        android:background="@color/black" />
+
+    <com.small.test.appstub.widget.pagerslidingtabstrip.PagerSlidingTabStrip
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:app1="http://schemas.android.com/apk/res/com.small.test.app.maintenance"
+        android:id="@+id/navigation_tabs"
+        style="@style/black_medium"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:background="@color/info_color_nor"
+        app:pstsIndicatorColor="@color/sys_one_navation_pressed"
+        app:pstsIndicatorHeight="40dp"
+        app:pstsShouldExpand="true"
+        app:pstsTextSelectedColor="@color/white"
+        app:pstsUnderlineColor="@color/transparent"
+        app1:pstsDividerPaddingTopBottom="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/navigation_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/navigation_container"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="90dp" />
+
+    <Button
+        android:id="@+id/submit_info_btn"
+        style="@style/white_medium"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:background="@mipmap/generalbuttonatthebottomofthepage_2x"
+        android:gravity="center"
+        android:text="@string/comfirm" />
+
+</FrameLayout>

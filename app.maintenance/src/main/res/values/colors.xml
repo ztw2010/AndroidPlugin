@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="maintenance_registration_bg">#f3f4f6</color>
+    <color name="info_color_nor">#515e72</color>
+    <color name="sys_one_navation_pressed">#3F4954</color>
+    <color name="lightgray">#e1e1e1</color>
+    <color name="text_hint_color">#807D78</color>
+    <color name="red">#FFFF3333</color>
+    <color name="text_password">#1a1a1a</color>
+    <color name="text_color_gray">#999999</color>
+    <color name="text_color_wight">#ffffff</color>
+    <color name="white_8alpha">#c8ffffff</color>
+    <color name="view">#cccccc</color>
+    <color name="background">#f3f4f6</color>
+    <color name="text_color_green">#42be54</color>
+    <color name="green">#00C158</color>
+    <color name="alpha_shadow">#4D000000</color>
+    <color name="chose_city_pop_bg">#eeeeee</color>
+</resources>

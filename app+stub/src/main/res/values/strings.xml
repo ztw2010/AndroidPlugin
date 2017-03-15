@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">app+stub</string>
+    <string name="application_crash">程序出现异常,即将退出!</string>
+    <string name="pull_down_start">下拉可刷新&#8230;</string>
+    <string name="pull_down_end">松开可刷新&#8230;</string>
+    <string name="pull_down_ing">刷新中&#8230;</string>
+    <string name="pull_up_start">上拉加载更多&#8230;</string>
+    <string name="pull_up_end">松开加载更多&#8230;</string>
+    <string name="pull_up_ing">加载中&#8230;</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label1">上拉加载</string>
+    <string name="pull_to_refresh_release_label">释放立即刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新...</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <string name="empty_view_hint">暂无数据,点击重试</string>
+    <string name="error_view_hint">加载失败</string>
+    <string name="no_network_view_hint">网络异常</string>
+</resources>
